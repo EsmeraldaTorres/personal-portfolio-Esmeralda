@@ -3,36 +3,12 @@ function showMenu() {
     document.getElementById('mobile-menu').classList.toggle('hide')
 }
 //TO CLOSE MOBILE MENU WHEN CLICK ANY OPTION
-// const mobilemenu = document.querySelector('.mobile-menu')
-// const menuLinks = document.querySelectorAll('.mobile-menu a[href^="#"]');
+ const mobilemenu = document.querySelector('.mobile-menu')
+ const menuLinks = document.querySelectorAll('.mobile-menu a[href^="#"]');
 
-// const observer = new IntersectionObserver ((entries) => {
-//     entries.forEach(entry => {
-//        const id = entry.target.getAttribute("id");
-//        const menuLink = document.querySelector(`.menu a[href="#${id}"]`)
-
-//        if(entry.isIntersecting){
-//            menuLink.classList.add("selected")
-//        }else{
-//            menuLink.classList.remove("selected")
-//        }
-//     })
-// })
-
-// menuLinks.forEach(menuLink => {
-//     if(menuLink.addEventListener("click")){
-//         mobilemenu.style.opacity = 0
-//     }
-//     })
-
-    // const hash = menuLink.getAttribute("href")
-    // const target = document.querySelector(hash);
-    // if(target){
-    //     observer.observe(target)
-    // }
-// })
-
-
+ menuLinks.forEach((menuLink) => {
+     menuLink.addEventListener("click", showMenu)
+ })
 
 
 // TO APPEAR SECTION ABOUT
@@ -74,13 +50,6 @@ window.addEventListener('scroll', hideName)
 //  CAROUSEL
 const longbox = document.querySelector('.long-box')
 const point = document.querySelectorAll('.point')
-
-// Cuando Click en un punto 
-// Saber la posicion de ese punto
-// Aplicar un transform translateX al grande
-// Quitar la clase activo de Todos los puntos
-//  Añadir la clase activo al punto que hemos hecho Click
-
 point.forEach( ( eachPoint , i) => {
     // asignar un click a cada punto
     point[i].addEventListener('click',()=>{

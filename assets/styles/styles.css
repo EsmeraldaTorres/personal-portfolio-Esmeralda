@@ -10,14 +10,6 @@ html{
 section[id]{
   scroll-margin-top: 40px;
 }
-/* PREGUNTAS
-¿como hacer desaparecer la barra de navegacion al darle
-click a cualquier enlace
-¿Por qué al voltearse las imagenes en services, les cuesta tantito?
-MY expereince: ¿Cómo cuadrar las cajas cuando el tamaño del texto cambia?
-¿Cómo centrar la imagen en mobileresponsive de hire me?
-Que el Mail no se desborde en mobile-responsive en contact me
-y que la caja de escribir mensaje, sea grande pero empiece en la línea de arriba */
 /* -----------------------------------NAV-------------------------------------------------*/
 nav{
   position: fixed;
@@ -315,27 +307,27 @@ h2 {
   text-align: center;
 }
 .card1{
-  background-image:url("https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-image: url("../imag/card.jpeg");
   background-size: cover;
 }
 .card2{
-  background-image: url("https://images.pexels.com/photos/2041627/pexels-photo-2041627.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("../imag/card1.jpg");
   background-size: cover;
 }
 .card3{
-  background-image:url("https://images.pexels.com/photos/1170412/pexels-photo-1170412.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260");
+  background-image: url("../imag/card3.jpg");
   background-size: cover;
 }
 .card4{
-  background-image:url("https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("../imag/card5.jpg");
   background-size: cover;
 }
 .card5{
-  background-image:url("https://images.pexels.com/photos/6498731/pexels-photo-6498731.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("../imag/card4.jpg");
   background-size: cover;
 }
 .card6{
-  background-image:url("https://images.pexels.com/photos/6801874/pexels-photo-6801874.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500");
+  background-image: url("../imag/card2.jpg");
   background-size: cover;
 }
 /* -----------------------------------EDUCATION-------------------------------------------------*/
@@ -410,10 +402,11 @@ p {
 /* -----------------------------------HIRE-ME-------------------------------------------------*/
 .hire-me{
   height: 60vh;
-  background: url(../imag/pexels-fauxels-3182781.jpg);
+  background: url(../imag/work2gether.jpg);
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+  background-position: center;
   position: relative;
   z-index: 0;
 }
@@ -537,6 +530,7 @@ p {
   padding: 8% 5% 0;
   justify-content: center;   
 }
+
 .contact-me .container {
   width: 100%;
   padding: 0 15px;
@@ -575,7 +569,11 @@ p {
   color: rgb(206, 115, 115);
 }
 .mt-2{
-  margin-top: .5rem
+  margin-top: .5rem;
+  overflow:hidden;
+  text-align: center;
+  white-space: normal;
+
 }
 .information-card a {
   font-size: 18px;
@@ -681,15 +679,6 @@ footer{
     display: flex;
     flex-wrap: wrap;
   }
-  .col-md-1 {
-     width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
   .col-md-4 {
     width: 33.33%;
   }
@@ -701,19 +690,7 @@ footer{
   }      
   .col-md-7 {          
     width: 58.33%;        
-  }        
-  .col-md-8 {
-    width: 66.66%;         
-  }       
-  .col-md-9 {
-    width: 75%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
+  }   
   .col-md-12 {
     width: 100%; 
   }    
